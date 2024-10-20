@@ -1,5 +1,5 @@
 "use client";
-import { faDiscord, faFacebookF, faLinkedinIn, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons';
+import { faDiscord, faFacebookF, faInstagram, faLinkedinIn, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { IconButton } from '@material-tailwind/react';
 import Link from 'next/link';
@@ -8,41 +8,36 @@ import React from 'react';
 const Footer = () => {
   const socialIcon = [
     {
-      url: "/",
+      url: "https://www.facebook.com/kryptoapi",
       icon: faFacebookF,
       color: "blue"
     },
     {
-      url: "/",
-      icon: faDiscord,
+      url: "https://www.instagram.com/kryptoapi",
+      icon: faInstagram,
       color: "purple"
     },
     {
-      url: "/",
+      url: "https://www.x.com/kryptoapi",
       icon: faTwitter,
       color: "black"
     },
     {
-      url: "/",
+      url: "https://www.linkedin.com/company/kryptoapi",
       icon: faLinkedinIn,
       color: "blue"
     },
     {
-      url: "/",
+      url: "https://www.youtube.com/kryptoapi",
       icon: faYoutube,
       color: "red"
     },
   ];
 
   const footerLinks = [
-    { name: "Contact Us", url: "/contact-us" },
-    { name: "Privacy Policy", url: "/privacy-policy" },
-    { name: "Terms of Service", url: "/terms" },
-    { name: "FAQ", url: "/faq" },
-    { name: "Blog", url: "/blog" },
-    { name: "About Us", url: "/about-us" },
-    { name: "Careers", url: "/careers" },
-    { name: "Help Center", url: "/help" },
+    { name: "Privacy Policy", url: "/terms_service.docx" },
+    { name: "Terms of Service", url: "/terms_service.docx" },
+    { name: "Help Center", url: "tel:2349027585555" },
   ];
 
   return (
