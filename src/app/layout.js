@@ -15,6 +15,7 @@ export default function RootLayout({ children }) {
         <StrictMode>
           {children}
           <ToastContainer />
+
         </StrictMode>
       </body>
     </html>

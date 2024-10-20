@@ -52,8 +52,8 @@ const Page = () => {
     }, [token, router]);
 
     return (
-        <div className='bg-gradient-to-r from-blue-200 to-purple-300'>
-            <div className=' flex w-fit mx-auto items-center justify-center min-h-screen '>
+        <div className="flex items-center justify-center min-h-screen ">
+      <div className="bg-[#fefefe] border border-gray-400 rounded-lg p-8 w-96">
                 <div className='bg-white md:px-10 p-4 rounded md:w-fit mx-auto'>
                     <Image src={"/images/adventure.svg"} width={180} height={180} alt='Verify email'  className='mx-auto'/>
                     <h2 className='text-base md:w-fit my-3 md:text-lg'>Your email has successfully been verified. You can log in to explore...</h2>

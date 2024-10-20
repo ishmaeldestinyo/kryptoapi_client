@@ -8,7 +8,7 @@ const TransactionCard = () => {
   const transactions = [
     {
       blockNumber: '123456',
-      hash: '0xabc123...',
+      source: '0xabc123...',
       wallet: '0xdef456...',
       amount: '0.5 ETH',
       status: 'received',
@@ -20,7 +20,7 @@ const TransactionCard = () => {
     },
     {
       blockNumber: '123457',
-      hash: '0xghi789...',
+      source: '0xghi789...',
       wallet: '0xjkl012...',
       amount: '1.0 ETH',
       status: 'sent',
@@ -32,7 +32,7 @@ const TransactionCard = () => {
     },
     {
       blockNumber: '123458',
-      hash: '0xmnop345...',
+      source: '0xmnop345...',
       wallet: '0xqrs678...',
       amount: '2.0 USDC',
       status: 'received',
@@ -50,7 +50,7 @@ const TransactionCard = () => {
         <thead>
           <tr className='font-semibold'>
             <th className='py-2 px-4 border-b border-gray-200 text-left'>Block Number</th>
-            <th className='py-2 px-4 border-b border-gray-200 text-left'>Hash</th>
+            <th className='py-2 px-4 border-b border-gray-200 text-left'>Source/Origin</th>
             <th className='py-2 px-4 border-b border-gray-200 text-left'>Wallet Addr</th>
             <th className='py-2 px-4 border-b border-gray-200 text-left'>Amount</th>
             <th className='py-2 px-4 border-b border-gray-200 text-left'>Asset</th>
@@ -61,12 +61,12 @@ const TransactionCard = () => {
         <tbody>
           {transactions.map((transaction, index) => (
             <tr
-              key={transaction.hash}
+              key={transaction.source}
               className={`${index % 2 === 0 ? 'bg-gray-50' : 'bg-gray-100'
                 } transition duration-200 hover:bg-gray-200`}
             >
               <td className='py-2 px-4 border-b border-gray-200'>{transaction.blockNumber}</td>
-              <td className='py-2 px-4 border-b border-gray-200'>{transaction.hash}</td>
+              <td className='py-2 px-4 border-b border-gray-200'>{transaction.source}</td>
 
               <td className='py-2 px-4 border-b border-gray-200'>
                 <span className={`font-bold ${transaction.status === 'received' ? 'text-green-500' : 'text-blue-500'}`}>

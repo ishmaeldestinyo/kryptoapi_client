@@ -67,9 +67,8 @@ const LoginForm = () => {
   };
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gradient-to-r from-blue-500 to-purple-500">
-      <div className="bg-white rounded-lg shadow-lg p-8 w-96">
-
+    <div className="flex items-center justify-center min-h-screen ">
+      <div className="bg-[#fefefe] border border-gray-400 rounded-lg p-8 w-96">
         <Typography variant="h4" className="text-center mb-6 text-gray-700">
           Login Account
         </Typography>
