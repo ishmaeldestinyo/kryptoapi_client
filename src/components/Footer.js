@@ -52,7 +52,7 @@ const Footer = () => {
       <div className='md:mt-0 w-fit mt-8 mx-auto text-black md:flex grid grid-cols-12 md:gap-4 gap-4 justify-end'>
         {
           socialIcon.map((menu, key) => (
-            <Link key={key} href={menu.url} className='col-span-4'>
+            <Link key={key} href={menu.url} target='_blank' className='col-span-4'>
               <IconButton className='bg-inherit text-black' size='lg'>
                 <FontAwesomeIcon color={menu.color} icon={menu.icon} className='w-5 h-5' />
               </IconButton>

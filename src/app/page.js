@@ -70,7 +70,7 @@ const page = () => {
               <Image src={"/images/3line.webp"} priority className='my-3' width={160} height={15} alt='Liner' />
 
               <h3 className='text-base'>
-                Explore our endless  <Link href={""} target='_blank' className='text-blue-300'>Crypto APIs</Link>, create account and ship your product at-easy
+                Explore our endless Crypto APIs create account and ship your product at-easy
               </h3>
 
             </div>
