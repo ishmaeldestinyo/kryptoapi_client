@@ -47,9 +47,9 @@ const Footer = () => {
 
   return (
     <div className='md:flex md:w-4/5 mx-auto gap-4 md:py-10'>
-      <div className='md:w-2/5 w-fit mx-auto text-sm md:text-base pt-2 grid grid-cols-1 md:grid-cols-4 gap-5'>
+      <div className='md:w-2/5 w-fit mx-auto text-base pt-2 grid grid-cols-1 md:grid-cols-4 gap-5'>
         {footerLinks.map((link, index) => (
-          <Link key={index} href={link.url} className='text-black md:text-base whitespace-nowrap text-sm hover:text-blue-700'>
+          <Link key={index} href={link.url} className='text-black text-base whitespace-nowrap  hover:text-blue-700'>
             {link.name}
           </Link>
         ))}
@@ -65,7 +65,7 @@ const Footer = () => {
           ))
         }
       </div>
-      <div className=' w-fit mx-auto text-sm md:text-base md:py-2 py-8'>
+      <div className=' w-fit mx-auto text-base md:py-2 py-8'>
         <span className='font-medium'>KryptoAPI</span> &copy; {new Date().getFullYear()} Alright Reserved
       </div>
     </div>

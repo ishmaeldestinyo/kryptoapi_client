@@ -49,7 +49,7 @@ const FeeStructureTable = () => {
                 <tbody>
                     {Object.entries(feeStructure).map(([currency, fees]) =>
                         fees.map((item, index) => (
-                            <tr key={`${currency}-${index}`} className="hover:bg-gray-50">
+                            <tr key={`${currency}-${index}`} className="hover:bg-gray-50 text-base">
                                 {index === 0 && (
                                     <td rowSpan={fees.length} className="border border-gray-300 p-2">
                                         {currency}

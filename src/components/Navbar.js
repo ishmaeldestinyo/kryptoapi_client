@@ -10,15 +10,15 @@ const Navbar = () => {
     const menuList = [
         {
             name: "Our Solutions",
-            url: "/servicess"
+            url: "#services"
         },
         {
             name: "APIs",
-            url: "/apis"
+            url: "https://documenter.getpostman.com/view/38937255/2sAXxY2TYG"
         },
         {
             name: "Pricing",
-            url: "/pricing"
+            url: "#pricing"
         },
     ];
 
@@ -52,7 +52,7 @@ const Navbar = () => {
 
             <div className={`md:w-fit justify-between z-50 md:relative md:py-0 py-5 absolute top-0 bg-white md:bg-inherit w-3/4 md:h-auto h-screen md:flex ${isOpen ? 'block' : 'hidden'} md:flex`}>
                 <div className='md:flex justify-evenly gap-x-5 md:mr-20'>
-                    <ul className='md:flex justify-center mt-2 md:gap-x-5 md:text-base text-sm'>
+                    <ul className='md:flex justify-center mt-2 md:gap-x-5 text-base'>
                         {
                             menuList.map((menu, i) => (
                                 <li key={i} className='md:my-0 my-5'>
