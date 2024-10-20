@@ -33,7 +33,7 @@ const page = () => {
       image_path: "/images/payment.png",
       descr: (
         <div className='text-sm md:text-base text-gray-600'>
-          With our advanced features like offline crypto payments, QR code transactions, payment links, and escrow services, KryptoAPI ensures secure and efficient payment processing. We're committed to helping businesses manage crypto payments seamlessly, offering a scalable solution that grows with your needs.
+          With our advanced features like offline crypto payments, QR code transactions, payment links, and escrow services, KryptoAPI ensures secure and efficient payment processing. We&apos;re committed to helping businesses manage crypto payments seamlessly, offering a scalable solution that grows with your needs.
         </div>
       )
     },
@@ -62,7 +62,7 @@ const page = () => {
           </div>
 
           <div className='md:w-2/5'>
-            <Image src={"/images/hero-wallpaper.png"} width={400} height={400} />
+            <Image src={"/images/hero-wallpaper.png"} alt='hero-wallpaper' width={400} height={400} />
           </div>
         </div>
 
@@ -76,7 +76,7 @@ const page = () => {
             <Image src={"/images/3line.webp"} priority className='md:my-3 my-1' width={160} height={15} alt='Liner' />
 
             <div className='p-3 text-sm md:text-base leading-[2]'>
-              We support multi-chain payments across <Link href={"/supported-networks"}>multiple blockchain</Link> and provide advanced features like offline transactions, QR code payments, payment links, and escrow services. At KryptoAPI, we're dedicated to streamlining secure crypto payments and simplifying digital business operations, making us your trusted partner for seamless and scalable transaction management.
+              We support multi-chain payments across <Link href={"/supported-networks"}>multiple blockchain</Link> and provide advanced features like offline transactions, QR code payments, payment links, and escrow services. At KryptoAPI, we&apos;re dedicated to streamlining secure crypto payments and simplifying digital business operations, making us your trusted partner for seamless and scalable transaction management.
             </div>
           </div>
         </div>
