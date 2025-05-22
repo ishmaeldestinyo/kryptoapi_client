@@ -52,7 +52,7 @@ const SignupForm = () => {
           setSuccess(response.data?.message);
           infoMsg(response.data?.message)
           setTimeout(() => {
-            router.replace("/auth/verify");
+            router.replace("/dashboard");
           }, 1500);
         } else {
           infoMsg(response.response.data.message);
